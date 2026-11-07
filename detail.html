@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0b0f">
+  <title>Detail Komik — Bacakomix</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main>
+    <div id="detail">
+      <div class="container"><div class="loading-block"><div class="spinner"></div><span>Memuat detail komik…</span></div></div>
+    </div>
+
+    <div class="container" id="detail-body" hidden>
+      <section class="section" aria-labelledby="synopsis-title">
+        <div class="section-head"><h2 class="section-title" id="synopsis-title">Sinopsis</h2></div>
+        <p class="synopsis clamped" id="synopsis"></p>
+        <button type="button" class="link-btn" id="synopsis-toggle" hidden>Selengkapnya</button>
+      </section>
+
+      <section class="section" aria-labelledby="chapters-title">
+        <div class="section-head">
+          <h2 class="section-title" id="chapters-title">Daftar Chapter</h2>
+          <span class="muted" id="chapter-count"></span>
+        </div>
+        <div class="chapter-tools" id="chapter-tools" hidden>
+          <label class="sr-only" for="chapter-filter">Cari nomor chapter</label>
+          <input type="search" class="chapter-filter" id="chapter-filter" placeholder="Cari nomor chapter…" inputmode="decimal">
+          <button type="button" class="btn btn-ghost btn-sm" id="sort-toggle" aria-label="Ubah urutan chapter"></button>
+        </div>
+        <div id="chapters">
+          <div class="loading-block"><div class="spinner"></div><span>Memuat daftar chapter…</span></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/detail.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0b0f">
+  <title>Baca Komik — Bacakomix</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="reader-page">
+  <header class="reader-bar" id="reader-bar">
+    <div class="container reader-bar-inner">
+      <a class="icon-btn" id="back-btn" href="index.html" aria-label="Kembali ke detail komik" title="Kembali ke detail">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+      </a>
+      <div class="reader-titles">
+        <a class="reader-manga" id="reader-manga" href="index.html">Bacakomix</a>
+        <h1 class="reader-chapter" id="reader-chapter">Memuat chapter…</h1>
+      </div>
+      <label class="sr-only" for="chapter-select">Pilih chapter</label>
+      <select class="reader-select" id="chapter-select" hidden></select>
+      <a class="icon-btn disabled" id="prev-top" href="#" aria-label="Chapter sebelumnya" title="Chapter sebelumnya" aria-disabled="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+      </a>
+      <a class="icon-btn disabled" id="next-top" href="#" aria-label="Chapter berikutnya" title="Chapter berikutnya" aria-disabled="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+      </a>
+    </div>
+    <div class="reader-progress" id="reader-progress"></div>
+  </header>
+
+  <main>
+    <div class="reader-state" id="reader-state">
+      <div class="loading-block"><div class="spinner"></div><span>Memuat halaman chapter…</span></div>
+    </div>
+    <div class="reader-pages" id="reader-pages" aria-label="Halaman komik"></div>
+
+    <section class="reader-end" id="reader-end" hidden>
+      <h2 id="end-title">Chapter selesai</h2>
+      <p id="end-sub"></p>
+      <div class="reader-nav">
+        <a class="btn btn-ghost disabled" id="prev-bottom" href="#" aria-disabled="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>Sebelumnya
+        </a>
+        <a class="btn btn-primary disabled" id="next-bottom" href="#" aria-disabled="true">
+          Berikutnya<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+      <div class="reader-nav">
+        <label class="sr-only" for="chapter-select-bottom">Lompat ke chapter</label>
+        <select class="reader-select reader-select-bottom" id="chapter-select-bottom" hidden></select>
+        <a class="btn btn-ghost" id="detail-bottom" href="index.html">Kembali ke Detail Komik</a>
+      </div>
+    </section>
+  </main>
+
+  <button type="button" class="to-top" id="to-top" aria-label="Kembali ke atas">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/reader.js"></script>
+</body>
+</html>

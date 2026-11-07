@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo Bacakomix">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb020"/>
+      <stop offset="1" stop-color="#ff5d73"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="52" height="52" rx="15" fill="url(#g)" transform="rotate(-6 32 32)"/>
+  <g fill="#ffffff">
+    <path d="M32 21c-5-3.5-11-3.5-15-.5v22c4-3 10-3 15 .5V21z"/>
+    <path d="M32 21c5-3.5 11-3.5 15-.5v22c-4-3-10-3-15 .5V21z"/>
+  </g>
+  <rect x="30.6" y="20" width="2.8" height="23" rx="1.4" fill="#1a1203" opacity=".22"/>
+  <g stroke="#ff8a3d" stroke-width="2" stroke-linecap="round" opacity=".55">
+    <path d="M20.5 27h6.5M20.5 31.5h6.5"/>
+    <path d="M37 27h6.5M37 31.5h6.5"/>
+  </g>
+</svg>

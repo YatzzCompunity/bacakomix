@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a0b0f">
+  <meta name="description" content="Bacakomix — baca komik manga, manhwa, dan manhua bahasa Indonesia terbaru.">
+  <meta property="og:title" content="Bacakomix — Baca Komik Bahasa Indonesia">
+  <meta property="og:description" content="Baca komik manga, manhwa, dan manhua bahasa Indonesia terbaru.">
+  <meta property="og:type" content="website">
+  <title>Bacakomix — Baca Komik Bahasa Indonesia</title>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header id="site-header"></header>
+
+  <main class="container">
+    <section class="hero" id="hero" aria-label="Komik pilihan">
+      <div class="hero-skeleton skeleton"></div>
+    </section>
+
+    <section class="section" id="continue-section" hidden>
+      <div class="section-head">
+        <h2 class="section-title">Lanjutkan Membaca</h2>
+      </div>
+      <div class="rail" id="continue-list"></div>
+    </section>
+
+    <section class="section" id="latest-section">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Terbaru</h2>
+          <p class="section-sub">Update chapter terbaru dari semua komik.</p>
+        </div>
+        <a class="section-link" href="browse.html">Lihat katalog →</a>
+      </div>
+      <div class="grid" id="latest-grid" aria-live="polite"></div>
+      <div class="load-more-wrap" id="load-more-wrap" hidden>
+        <button type="button" class="btn btn-ghost" id="load-more">Muat Lebih</button>
+      </div>
+    </section>
+
+    <section class="section" id="bookmark">
+      <div class="section-head">
+        <div>
+          <h2 class="section-title">Bookmark Saya</h2>
+          <p class="section-sub">Komik yang kamu simpan buat dibaca nanti.</p>
+        </div>
+        <a class="section-link" href="browse.html?tab=bookmark" id="bookmark-all" hidden>Lihat semua →</a>
+      </div>
+      <div id="bookmark-list"></div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/common.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
